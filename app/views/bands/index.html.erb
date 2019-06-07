@@ -1,0 +1,14 @@
+<% require_logged_in %>
+
+
+<h1>Here are all of our bands</h1>
+
+<br>
+
+<ul>
+
+    <% @bands.each do |band| %>
+            <%= render 'band', band: band, action: :show %>
+        <br>
+    <% end %>
+</ul>

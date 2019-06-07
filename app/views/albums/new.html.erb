@@ -1,0 +1,18 @@
+<h1>Add a new album</h1>
+
+<form action="<%= new_band_album_url %>" method="POST" class="album-form">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label>Album Title:
+    <input type="text" name="album[title]" value="<%=  %>">
+  </label>
+
+  <label>Year album was released:
+    <input type="text" name="album[year]" value="<%=  %>">
+  </label>
+
+  
+
+
+    <input type="submit" value="Create Album">
+</form>

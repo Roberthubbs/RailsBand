@@ -1,0 +1,14 @@
+<% require_logged_in %>
+
+
+<h1>Here are the bands albums</h1>
+
+<br>
+
+<ul>
+
+    <% @albums. each do |album| %>
+            <%= render 'album', album: album, action: :show%>
+        <br>
+    <% end %>
+</ul>
